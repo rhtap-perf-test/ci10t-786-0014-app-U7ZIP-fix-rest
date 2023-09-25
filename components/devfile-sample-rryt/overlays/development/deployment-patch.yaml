@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-rryt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/ci10t-786-0014-tenant/ci10t-786-0014-app/devfile-sample-rryt@sha256:1119702ee27b2dbfa346f8e79617426f2c11ae80ca3d0f3b83d4630412bdb850
+        name: my-nodejs
+        resources: {}
+status: {}
